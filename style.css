@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: #88c070;
+  font-family: "Press Start 2P", cursive;
+  overflow: hidden;
+}
+.game-screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.farm-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mailbox {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  width: 64px;
+  height: 64px;
+  background: url('https://i.imgur.com/yUQoUo9.png') no-repeat center/contain;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.popup {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: #fdf5e6;
+  border: 4px solid #b56d29;
+  padding: 10px;
+  overflow-y: scroll;
+  z-index: 99;
+}
+.popup.hidden {
+  display: none;
+}
+.letters img {
+  width: 100%;
+  margin-top: 10px;
+}
