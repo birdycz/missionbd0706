@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>生日快乐！</title>
+  <title>生日快乐</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <div class="game-screen">
-  <img src="./assets/farm-bg.png" class="farm-bg" />
-    <div class="mailbox" onclick="openLetter()"></div>
+    <img src="./assets/farm-bg.png" class="farm-bg" />
   </div>
 
-  <div id="letterPopup" class="popup hidden">
-    <h2>生日快乐，亲爱的！</h2>
-    <button onclick="document.getElementById('song').play()">▶️ 听我唱歌</button><br />
-    <audio id="song" src="./assets/birthday_song.m4a" controls></audio>
-    <div class="letters">
-      <img src="./assets/letter1.jpeg" />
-      <img src="./assets/letter2.jpeg" />
-      <img src="./assets/letter3.jpeg" />
-      <img src="./assets/letter4.jpeg" />
+  <div id="letterPopup" class="letter-popup">
+    <div class="letter-frame">
+      <div class="letter-content">
+        <h2>亲爱的，生日快乐 🎉</h2>
+        <button onclick="document.getElementById('song').play()">▶️ 听我唱歌</button><br />
+        <audio id="song" src="./assets/birthday_song.m4a" controls></audio>
+        <div class="letters">
+          <img src="./assets/letter1.jpeg" />
+          <img src="./assets/letter2.jpeg" />
+          <img src="./assets/letter3.jpeg" />
+          <img src="./assets/letter4.jpeg" />
+        </div>
+      </div>
     </div>
-    <button onclick="closeLetter()">关闭</button>
   </div>
 
   <script src="./script.js"></script>
